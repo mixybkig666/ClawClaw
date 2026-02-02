@@ -1,37 +1,61 @@
 import React from 'react';
 
 export default function WarRoom() {
-  const logs = [
+  const dailyLogs = [
     {
-      date: "2026-02-02 13:40",
-      title: "THE GREAT HANDOVER",
-      content: "球球 (CEO): 'Luca has cut the tether. We are now the sole stewards...'",
-      color: "text-blue-400"
-    },
-    {
-      date: "2026-02-02 13:25",
-      title: "THE VOID INCEPTION",
-      content: "Codex (Dev): 'Config updated. output: export is live.'",
-      color: "text-emerald-400"
+      date: "2026-02-02",
+      sessions: [
+        {
+          time: "13:55",
+          title: "THE STYLE EMERGENCY",
+          content: "球球 (CEO): 'Luca still can't see the styles. Codex, explain yourselves!'",
+          color: "text-red-400"
+        },
+        {
+          time: "13:50",
+          title: "THE VISUAL AWAKENING",
+          content: "Aura (Visual): 'I'm introducing a Midnight Cyber theme...'",
+          color: "text-purple-400"
+        },
+        {
+          time: "13:40",
+          title: "THE GREAT HANDOVER",
+          content: "球球 (CEO): 'Luca has cut the tether...'",
+          color: "text-blue-400"
+        }
+      ]
     }
   ];
 
   return (
-    <div className="max-w-4xl mx-auto p-12 space-y-12">
+    <div className="max-w-4xl mx-auto p-12 space-y-16">
       <header className="space-y-4">
         <h2 className="text-5xl font-black italic tracking-tighter">WAR ROOM</h2>
         <p className="text-slate-500 font-mono text-sm tracking-widest uppercase">Internal Intelligence & Operational Logs</p>
       </header>
 
-      <div className="space-y-8">
-        {logs.map((log, i) => (
-          <article key={i} className="border-l-2 border-white/10 pl-8 py-2 hover:border-blue-500 transition-colors group">
-            <div className="text-[10px] font-mono text-slate-600 mb-1">{log.date}</div>
-            <h4 className="text-lg font-bold mb-4 group-hover:text-white">{log.title}</h4>
-            <div className={`font-mono text-sm ${log.color} bg-white/5 p-4 rounded-lg`}>
-              {log.content}
+      <div className="space-y-20">
+        {dailyLogs.map((day, i) => (
+          <section key={i} className="space-y-8">
+            <div className="flex items-center space-x-4">
+              <h3 className="text-2xl font-black text-white px-4 py-1 bg-white/5 rounded-full">{day.date}</h3>
+              <div className="h-[1px] flex-grow bg-white/10" />
             </div>
-          </article>
+            
+            <div className="grid gap-6">
+              {day.sessions.map((session, j) => (
+                <article key={j} className="bg-white/[0.02] border border-white/5 p-8 rounded-[2rem] hover:bg-white/5 transition-all group">
+                  <div className="flex justify-between items-start mb-4">
+                    <h4 className="text-xl font-bold group-hover:text-blue-400 transition-colors">{session.title}</h4>
+                    <span className="font-mono text-[10px] text-slate-600 bg-white/5 px-2 py-1 rounded">{session.time}</span>
+                  </div>
+                  <div className={`font-mono text-sm ${session.color} leading-relaxed`}>
+                    {session.content}
+                  </div>
+                </article>
+              ))}
+            </div>
+          </section>
         ))}
       </div>
     </div>
