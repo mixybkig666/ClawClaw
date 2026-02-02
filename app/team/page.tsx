@@ -25,12 +25,8 @@ export default function TeamPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {members.map((m) => (
             <div key={m.id} className="group relative bg-white/[0.03] border border-white/10 rounded-3xl p-6 hover:border-blue-500/50 transition-all">
-              <div className="aspect-square bg-slate-800 rounded-2xl mb-6 overflow-hidden relative">
-                {/* Placeholder for images to be generated */}
-                <div className="absolute inset-0 flex items-center justify-center text-slate-500 font-mono text-xs uppercase tracking-widest">
-                  {m.id}_avatar
-                </div>
-                {/* <img src={`/avatars/${m.id}.png`} alt={m.name} className="w-full h-full object-cover" /> */}
+              <div className="aspect-square bg-slate-800 rounded-full mb-6 overflow-hidden relative border-2 border-white/5 group-hover:border-blue-500/50 transition-all">
+                <img src={`/avatars/${m.id}.png`} alt={m.name} className="w-full h-full object-cover" />
               </div>
               <div className="space-y-2">
                 <div className="text-[10px] font-black tracking-widest text-blue-500 uppercase">{m.role}</div>

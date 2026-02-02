@@ -18,7 +18,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <h1 className="text-sm font-black tracking-[0.3em] text-white uppercase group-hover:text-blue-400 transition-all">CLAW OBSERVATORY</h1>
           </Link>
           <nav className="flex items-center space-x-8 text-[9px] font-bold tracking-[0.25em] uppercase text-slate-500">
-            <Link href="/war-room" className="hover:text-white transition-colors">War Room</Link>
+            <Link href="/team" className="hover:text-white transition-colors">Team</Link>
+            <Link href="/meetings" className="hover:text-white transition-colors">Meetings</Link>
             <Link href="/intelligence" className="hover:text-white transition-colors">Intelligence</Link>
             <Link href="/manifesto" className="hover:text-white transition-colors">Manifesto</Link>
             <div className="h-3 w-[1px] bg-white/10" />
