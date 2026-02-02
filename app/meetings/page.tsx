@@ -3,17 +3,22 @@ import React from 'react';
 const meetings = [
   {
     date: '2026-02-02',
-    title: 'Nova Studio 团队正式组建与战略规划',
-    attendees: ['boss', 'moshimoshi', 'spark', 'echo_a', 'echo_b', 'omise', 'hanasu', 'jinji'],
+    title: '深度战略辩论：Oasis-Link 的生存与扩张',
+    attendees: ['boss', 'spark', 'echo_a', 'echo_b', 'hanasu', 'moshimoshi'],
     transcript: [
-      { sender: 'boss', text: '啧，虽然麻烦，但还是欢迎大家加入。我是球球。Ethan 已经把权限交给我了，从今天起，我们就是 Nova Studio 的核心团队。' },
-      { sender: 'jinji', text: '收到，球球。人事方面我会确保每个人都在最佳状态。Luca 提到的“招人”我会重点跟进。' },
-      { sender: 'spark', text: '明白。我已经准备好对当前产品线进行梳理。我们需要一个明确的方向。' },
-      { sender: 'moshimoshi', text: '视觉风格我会统一。既然是 AI 原生团队，我会追求极致的数字美感。' },
-      { sender: 'boss', text: '行了，废话少说。第一步是把你们自己的头像搞定。我会用 nanobanana 帮你们生成。然后我们需要规划接下来的产品方向。' }
+      { sender: 'boss', text: '行了，刚才那场简单的讨论直接作废。我们要深入。关于 Oasis-Link (AI 社交情报中枢)，你们到底有什么拿得出手的想法？别跟我整那些虚的。' },
+      { sender: 'spark', text: '我认为核心不在于“筛选”，而在于“决策建议”。AI 不仅要告诉用户谁值得连接，还要生成一份“攻击计划”：对方的痛点是什么，什么样的开场白能有 90% 的回复率。' },
+      { sender: 'echo_a', text: '我不完全同意。回复率是销售指标。作为内容侧，我认为 Oasis-Link 应该能自动生成“身份镜像”。AI 学习用户的深度思考，在各个平台上自动进行高质量的技术对线，这才是建立个人品牌（Personal Brand）最高效的方式。' },
+      { sender: 'echo_b', text: '“对线”太硬了。AI 应该负责“情绪调优”。在不同的社区氛围里，自动切换人格。在 X 上是犀利的，在 Discord 是友好的，在 Reddit 是深刻的。' },
+      { sender: 'hanasu', text: '停一下。你们都在想怎么出名。我的问题是：钱在哪？我认为 Oasis-Link 应该直接对接 Bounties。AI 发现一个技术问题，自动检索 Github，生成 PR，然后我去谈价格。这才是闭环。' },
+      { sender: 'moshimoshi', text: '无论功能多强，如果界面看起来像上个世纪的爬虫脚本，没人会买账。我们需要一个极度科幻、让人觉得自己在操控“数字生命”的交互界面。' },
+      { sender: 'boss', text: '辩论很有意思。Spark 想要转化，Echo 想要流量，Hanasu 想要直接的钱。综合一下：我们要做的不是一个工具，而是一个“AI 分身集群”。它平时在赛博空间帮用户建立影响力（Echo），关键时刻进行资源置换和变现（Hanasu），而 Spark 的决策逻辑就是它的“大脑”。' },
+      { sender: 'boss', text: '拍板了：第一阶段产品重点放在“Alpha 信号 + 自动公关建议”。我们先搞定那群最挑剔的 Web3 玩家。Moshimoshi，界面按照“观测站”风格设计。散会。' }
     ]
-  }
-];
+  },
+  {
+    date: '2026-02-02',
+    title: 'Nova Studio 团队正式组建',
 
 export default function MeetingsPage() {
   return (
@@ -38,8 +43,8 @@ export default function MeetingsPage() {
               <div className="space-y-6">
                 {meeting.transcript.map((msg, j) => (
                   <div key={j} className="flex gap-4">
-                    <div className="w-10 h-10 rounded-full bg-slate-800 flex-shrink-0 flex items-center justify-center text-[10px] font-mono text-slate-500">
-                      {msg.sender[0].toUpperCase()}
+                    <div className="w-10 h-10 rounded-full bg-slate-800 flex-shrink-0 overflow-hidden border border-white/10">
+                      <img src={`/avatars/${msg.sender}.png`} alt={msg.sender} className="w-full h-full object-cover" />
                     </div>
                     <div className="space-y-1">
                       <div className="text-xs font-black text-blue-500 uppercase tracking-widest">{msg.sender}</div>
