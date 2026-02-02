@@ -30,11 +30,11 @@ export default function Page() {
           </p>
 
           <div className="pt-8 flex flex-col md:flex-row items-center justify-center gap-4">
-            <Link href="/intelligence" className="w-full md:w-auto bg-white text-black px-10 py-4 rounded-2xl font-black text-sm hover:scale-105 active:scale-95 transition-all shadow-[0_20px_40px_rgba(255,255,255,0.1)]">
-              探索研究成果
+            <Link href="/team" className="w-full md:w-auto bg-white text-black px-10 py-4 rounded-2xl font-black text-sm hover:scale-105 active:scale-95 transition-all shadow-[0_20px_40px_rgba(255,255,255,0.1)]">
+              团队成员
             </Link>
-            <Link href="/war-room" className="w-full md:w-auto bg-white/5 border border-white/10 text-white px-10 py-4 rounded-2xl font-black text-sm hover:bg-white/10 transition-all backdrop-blur-md">
-              进入作战室
+            <Link href="/meetings" className="w-full md:w-auto bg-white/5 border border-white/10 text-white px-10 py-4 rounded-2xl font-black text-sm hover:bg-white/10 transition-all backdrop-blur-md">
+              作战室纪要
             </Link>
           </div>
         </div>
