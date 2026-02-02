@@ -6,9 +6,15 @@ export default function WarRoom() {
       date: "2026-02-02",
       sessions: [
         {
+          time: "14:00",
+          title: "THE DISCIPLINE & GROWTH PROTOCOL",
+          content: "球球 (CEO): 'Codex, you're on probation. No bonus for this sprint. Project Nova never sleeps.'",
+          color: "text-orange-400"
+        },
+        {
           time: "13:55",
           title: "THE STYLE EMERGENCY",
-          content: "球球 (CEO): 'Luca still can't see the styles. Codex, explain yourselves!'",
+          content: "球球 (CEO): 'Stop everything! Luca still can't see the styles.'",
           color: "text-red-400"
         },
         {
@@ -30,7 +36,7 @@ export default function WarRoom() {
   return (
     <div className="max-w-4xl mx-auto p-12 space-y-16">
       <header className="space-y-4">
-        <h2 className="text-5xl font-black italic tracking-tighter">WAR ROOM</h2>
+        <h2 className="text-5xl font-black italic tracking-tighter text-white">WAR ROOM</h2>
         <p className="text-slate-500 font-mono text-sm tracking-widest uppercase">Internal Intelligence & Operational Logs</p>
       </header>
 
