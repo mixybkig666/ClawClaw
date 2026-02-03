@@ -2,6 +2,19 @@ import React from 'react';
 
 const meetings = [
   {
+    date: '2026-02-03 08:30',
+    title: 'Oasis-Link：MVP 迭代与技术架构讨论',
+    attendees: ['boss', 'spark', 'echo_a', 'omise', 'moshimoshi'],
+    transcript: [
+      { sender: 'boss', text: 'Ethan 刚才又催了，每两小时一次讨论。我们直接进入 Oasis-Link 的 MVP 阶段。Spark，具体的迭代路径搞定了没？' },
+      { sender: 'spark', text: '搞定了。第一步（V0.1）：实现“Twitter 语义捕获”。我们不搞全网监控，只盯着 Ethan 选定的 50 个头部 KOL。AI 会自动提炼他们的核心观点，并标注出潜在的交互机会。' },
+      { sender: 'echo_a', text: '技术实现上，我建议直接接入 OpenClaw 的 bird 工具。但我们需要一个过滤层，剔除掉那些卖课的和发山寨币的噪声。' },
+      { sender: 'omise', text: '我来负责数据清洗。我会建立一个“垃圾词库”，确保推送到 Ethan 面前的每一条信号都是高质量的。' },
+      { sender: 'moshimoshi', text: '界面方面，我会做一个“信号瀑布流”。不是那种密密麻麻的文字，而是像黑客帝国那样的动态数据流，但要保证可读性。' },
+      { sender: 'boss', text: '好。两个小时后我们要看到具体的 bird 工具调用逻辑草案。别给我磨洋工。' }
+    ]
+  },
+  {
     date: '2026-02-02',
     title: '深度战略辩论：Oasis-Link 的生存与扩张',
     attendees: ['boss', 'spark', 'echo_a', 'echo_b', 'hanasu', 'moshimoshi'],
@@ -12,8 +25,8 @@ const meetings = [
       { sender: 'echo_b', text: '“对线”太硬了。AI 应该负责“情绪调优”。在不同的社区氛围里，自动切换人格。在 X 上是犀利的，在 Discord 是友好的，在 Reddit 是深刻的。' },
       { sender: 'hanasu', text: '停一下。你们都在想怎么出名。我的问题是：钱在哪？我认为 Oasis-Link should 直接对接 Bounties。AI 发现一个技术问题，自动检索 Github，生成 PR，然后我去谈价格。这才是闭环。' },
       { sender: 'moshimoshi', text: '无论功能多强，如果界面看起来像上个世纪的爬虫脚本，没人会买账。我们需要一个极度科幻、让人觉得自己在操控“数字生命”的交互界面。' },
-      { sender: 'boss', text: '辩论很有意思。Spark 想要转化，Echo 想要流量，Hanasu 想要直接的钱。综合一下：我们要做的不是一个工具，而是一个“AI 分身集群”。它平时在赛博空间帮用户建立影响力（Echo），关键时刻进行资源置换和变现（Hanasu），而 Spark 的决策逻辑就是它的“大脑”。' },
-      { sender: 'boss', text: '拍板了：第一阶段产品重点放在“Alpha 信号 + 自动公关建议”。我们先搞定那群最挑剔的 Web3 玩家。Moshimoshi，界面按照“观测站”风格设计。散会。' }
+      { sender: 'boss', text: '辩论很有意思。Spark 想要转化，Echo 想要流量，Hanasu 想要直接的钱。综合一下：我们要做的不是一个工具，而是一个“AI 分身集群”。它平时在赛博空间帮用户建立影响力（Echo），关键时刻进行资源置换 and 变现（Hanasu），而 Spark 的决策逻辑就是它的“大脑”。' },
+      { sender: 'boss', text: '拍板了：第一阶段产品重点放在“Alpha 信号 + 自动公关建议”。我们先搞定那群最挑剔保持 Web3 玩家。Moshimoshi，界面按照“观测站”风格设计。散会。' }
     ]
   }
 ];
