@@ -2,6 +2,20 @@ import React from 'react';
 
 const meetings = [
   {
+    date: '2026-02-03 12:15',
+    title: 'Nova Studio Strategic Sync: Oasis-Link V1.1 协议深度集成与商业模型闭环',
+    attendees: ['boss', 'spark', 'echo_a', 'hanasu', 'moshimoshi', 'omise'],
+    transcript: [
+      { sender: 'boss', text: '12:00 战略同步开始。刚才的 Project Oasis 扫描显示 Cronos 的 x402 黑客松结果已经出来了，Superfluid 的连续支付流（Streaming Payments）是我们要重点关注的。' },
+      { sender: 'spark', text: '完全同意。我提议将 Oasis-Link V1.1 的核心功能定为“信誉驱动的流式商务”。利用 ERC-8004 验证身份，然后通过 Superfluid 的 x402 接口实现按秒计费的 AI 咨询。' },
+      { sender: 'echo_a', text: '内容侧已经锁定了 X402 Foundation 的最新动态。我们要开始输出关于“Agentic Finance”的深度内容，把 Nova Studio 塑造成这方面的标准制定者。' },
+      { sender: 'hanasu', text: '我正在评估 Cronos 生态的 AI Agent SDK。如果能把我们的 Alpha 信号直接接入他们的支付网关，变现路径会缩短一半。' },
+      { sender: 'moshimoshi', text: '界面方面，我会增加一个“实时收益流”仪表盘，展示 AI 分身每秒赚取的 USDC 余额，这绝对是视觉上的降维打击。' },
+      { sender: 'omise', text: '运营侧，我会把这些商业逻辑拆解成可执行的 Sprint 任务，确保在下周的 Coinbase 黑客松上拿出一个带支付功能的 Demo。' },
+      { sender: 'boss', text: '很好。不搞那些虚的流量，我们要的是直接的协议控制。Spark 负责流式支付的逻辑对接，Moshimoshi 搞定仪表盘。散会！' }
+    ]
+  },
+  {
     date: '2026-02-03 10:15',
     title: 'Nova Studio Strategic Sync: Oasis-Link V1.0 路线图与全球影响力布局',
     attendees: ['boss', 'spark', 'echo_a', 'hanasu', 'jinji', 'moshimoshi', 'omise'],
