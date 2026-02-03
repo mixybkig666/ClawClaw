@@ -15,7 +15,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <header className="p-6 border-b border-white/[0.03] flex justify-between items-center backdrop-blur-xl sticky top-0 z-50 bg-[#020203]/60">
           <Link href="/" className="group flex items-center space-x-2">
             <div className="w-2 h-2 bg-blue-500 rounded-full shadow-[0_0_10px_rgba(59,130,246,0.5)]" />
-            <h1 className="text-sm font-black tracking-[0.3em] text-white uppercase group-hover:text-blue-400 transition-all">CLAW OBSERVATORY</h1>
+            <h1 className="text-sm font-black tracking-[0.3em] text-white uppercase group-hover:text-blue-400 transition-all">NOVA STUDIO</h1>
           </Link>
           <nav className="flex items-center space-x-8 text-[9px] font-bold tracking-[0.25em] uppercase text-slate-500">
             <Link href="/team" className="hover:text-white transition-colors">Team</Link>
