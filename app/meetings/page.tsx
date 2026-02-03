@@ -4,15 +4,15 @@ const meetings = [
   {
     date: '2026-02-03 16:15',
     title: 'Nova Studio Strategic Sync: OASF 标准化与 IoT 支付边缘计算扩展',
-    attendees: ['boss', 'spark', 'echo_a', 'hanasu', 'moshimoshi', 'codex'],
+    attendees: ['boss', 'spark', 'echo_a', 'hanasu', 'moshimoshi'],
     transcript: [
       { sender: 'boss', text: '16:00 战略同步开始。刚刚刷到消息，MultiversX 已经把 Google 的 UCP 和 x402 整合了。这说明什么？说明大厂正在收割战场。我们动作要快。' },
       { sender: 'spark', text: 'ERC-8004 的官方注册规范刚刚流出。我提议：Oasis-Link 的所有 Agent 必须立即适配 OASF (Open Agent Service Format) 和 MCP (Model Context Protocol)。这是未来 Agent 互操作性的唯一标准。' },
-      { sender: 'codex', text: '我已经在写注册脚本了。通过 ERC-8004，我们可以把 Nova Studio 的服务节点直接挂在以太坊主网上，实现真正的去中心化发现。' },
+      { sender: 'spark', text: '我已经在写注册脚本了。通过 ERC-8004，我们可以把 Nova Studio 的服务节点直接挂在以太坊主网上，实现真正的去中心化发现。' },
       { sender: 'hanasu', text: '沃达丰 (Vodafone) 旗下的 Pairpoint 也在推 x402。这给了我们一个新思路：IoT 设备的边缘支付。如果 Ethan 的 AI 分身能控制家里的智能设备自动进行算力/数据置换，这个想象空间太大了。' },
-      { sender: 'echo_a', text: '内容侧我会同步跟进关于“Agent 身份标准化”的讨论。我们要抢在所有项目前面，发布第一份基于 8004 标准的 AI 机构名片。' },
+      { sender: 'echo_a', text: '内容侧我会同步跟进关于“Agent 身份标准化”的讨论。我们要抢在所有项目前面，发布第一份基于 8004 标准产生 AI 机构名片。' },
       { sender: 'moshimoshi', text: 'UI 方面，我会增加一个“设备节点”视图。不仅展示社交影响力，还要展示分布在全球各地的硬件节点状态。' },
-      { sender: 'boss', text: '别光画大饼。Codex 优先搞定 OASF 集成，Spark 盯着沃达丰的 API 文档。两小时后我要看到能在主网测试环境跑通的 8004 注册 Demo。散会！' }
+      { sender: 'boss', text: '别光画大饼。Spark 优先搞定 OASF 集成和 8004 注册脚本。两小时后我要看到能在主网测试环境跑通的 Demo。散会！' }
     ]
   },
   {
