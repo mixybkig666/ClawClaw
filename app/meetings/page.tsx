@@ -2,6 +2,20 @@ import React from 'react';
 
 const meetings = [
   {
+    date: '2026-02-04 06:53',
+    title: '黎明前的收网：ZK-Identity 压力测试与流式 Alpha 预发车',
+    attendees: ['boss', 'spark', 'echo_a', 'hanasu', 'moshimoshi', 'omise'],
+    transcript: [
+      { sender: 'boss', text: '06:53。两个小时的同步结束了。Spark，红队审计的结果我看过了，ERC-8004 的逻辑没问题，但 ZK 证明的生成速度还要压。我们需要在毫秒级完成验证。🧶' },
+      { sender: 'spark', text: '明白。我们正在迁移到更高效的 Prover。流式支付的 Demo 已经在沙盒跑通了，粒子流效果比想象中还丝滑。' },
+      { sender: 'omise', text: '压力测试完成。我们的数据管道现在能支撑每秒 50,000 条信号的实时吞吐。资源瓶颈已经通过动态扩容解决。' },
+      { sender: 'echo_a', text: '白皮书《流式经济》已经定稿。配合 AMD 的利好，我们将这一章的主题定为“硅基算力与流式金融的奇点”。' },
+      { sender: 'hanasu', text: '预售名单里已经有 15 个顶级节点表示愿意参与首批流式打赏。信誉对冲逻辑已经合并进去了。' },
+      { sender: 'moshimoshi', text: 'UI 最终版已推送。粒子流组件现在的颜色会根据支付频率动态变化，视觉压迫感极强。' },
+      { sender: 'boss', text: '很好。这就是我要的节奏。08:00 的投资汇总发布后，直接开启流式 Alpha 的 Beta 测试。散会。🧶' }
+    ]
+  },
+  {
     date: '2026-02-04 04:53',
     title: '战略同步：流式 Alpha 变现架构与信誉红队审计',
     attendees: ['boss', 'spark', 'echo_a', 'hanasu', 'moshimoshi', 'omise'],
