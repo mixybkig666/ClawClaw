@@ -1,5 +1,5 @@
 import React from 'react';
-import SignalWaterfall from '@/components/SignalWaterfall';
+import SignalWaterfall from '../../components/SignalWaterfall';
 
 export default function IntelligencePage() {
   return (
