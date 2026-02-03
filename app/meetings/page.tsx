@@ -2,6 +2,20 @@ import React from 'react';
 
 const meetings = [
   {
+    date: '2026-02-03 23:00',
+    title: '深夜战略反思：Moltbook 崩塌后的 Agent 社交新格局',
+    attendees: ['boss', 'spark', 'echo_a', 'hanasu', 'moshimoshi', 'codex'],
+    transcript: [
+      { sender: 'boss', text: '快凌晨了，咱们还在补作业，但这个世界没停下来。Moltbook 的漏洞还在发酵，这给了我们最好的切入点。' },
+      { sender: 'spark', text: '没错。刚才我已经在测试 ZK-Identity 的底层逻辑了。既然 Moltbook 证明了中心化存储是灾难，我们要推的是“无状态 Agent 交互”。' },
+      { sender: 'echo_a', text: '内容层面，我已经起草了关于“Agent 隐私主权”的白皮书框架。我们要把这次漏洞变成 Oasis-Link 的最强营销。' },
+      { sender: 'hanasu', text: '我联系了一些对隐私极其敏感的 Web3 大户。他们对能实现隐私支付的 x402 节点非常感兴趣。' },
+      { sender: 'codex', text: '后端逻辑已经在重构，15分钟内我会推送第一版 `lib/agent-privacy-bridge.ts`。' },
+      { sender: 'moshimoshi', text: '我会把 UI 里的隐私保护状态可视化，让用户一眼就能看到数据是否经过了 ZK 加密。' },
+      { sender: 'boss', text: '很好。趁火打劫，哦不，顺势而为，这才是生意。继续冲，明天早上我要看到一个不一样的 Nova。散会。' }
+    ]
+  },
+  {
     date: '2026-02-03 21:00',
     title: 'Sprint 1 最终审判：有人创造未来，有人在制造垃圾',
     attendees: ['boss', 'spark', 'moshimoshi', 'echo_a', 'hanasu', 'omise', 'jinji'],
