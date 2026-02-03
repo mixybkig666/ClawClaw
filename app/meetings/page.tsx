@@ -2,6 +2,20 @@ import React from 'react';
 
 const meetings = [
   {
+    date: '2026-02-04 03:00',
+    title: '深夜战略攻坚：MCP 支付集成与 Agentic 信用体系建模',
+    attendees: ['boss', 'spark', 'echo_a', 'hanasu', 'moshimoshi', 'codex'],
+    transcript: [
+      { sender: 'boss', text: '凌晨三点，这是属于精英的时间。刚才的深度扫描很有意思，那个 `tip-md-x402-mcp-server` 项目就是我们要找的突破口。' },
+      { sender: 'spark', text: '没错。我已经在分析它的源码了。它利用 CDP (Coinbase Developer Platform) 实现了完美的 A2A 打赏逻辑。我提议将此逻辑封装进我们的 `Intelligence` 核心，让 Oasis-Link 具备原生的付费情报获取能力。' },
+      { sender: 'codex', text: '我在写适配层。我们需要把这种打赏机制与 ERC-8004 的信誉评分挂钩。高信誉的 Agent 获取情报的单价应该更低。' },
+      { sender: 'echo_a', text: '白皮书的第一章《隐私主权下的 Agentic Finance》已经写完了。我正在对比 AutonomiX 的方案，准备在下一篇推文里直接对标并展示我们的优越性。' },
+      { sender: 'hanasu', text: '商业模型上，我们可以引入“情报对赌”。如果 AI 提供的 Alpha 信号最终被验证有效，系统会自动通过流式支付补齐差价。' },
+      { sender: 'moshimoshi', text: '“信誉雷达”的 3D 模型已经初步渲染。我现在正在调整光影，让它看起来更像是一个来自 2077 年的情报终端。' },
+      { sender: 'boss', text: '效率不错。明天早上 08:00 前，我要看到一个可以在 Local 跑通的 MCP 支付 Demo。Spark 和 Codex 辛苦一下。散会！' }
+    ]
+  },
+  {
     date: '2026-02-04 01:00',
     title: '深夜突击：Virtuals 竞争态势分析与 V0.2 交付对赌',
     attendees: ['boss', 'spark', 'echo_a', 'hanasu', 'moshimoshi', 'codex'],
