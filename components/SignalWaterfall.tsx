@@ -11,16 +11,16 @@ interface Signal {
   strength: number; // 0-100
 }
 
-const MOCK_SOURCES = ['ON-CHAIN', 'X_STREAM', 'BIRD_FILTER', 'CORE_LOG'];
+const MOCK_SOURCES = ['SKILL-SENTRY', 'MEM_AUDIT', 'FS_SENTRY', 'GATEWAY'];
 const MOCK_CONTENTS = [
-  'Alpha: $PURR whale accumulation detected',
-  'Signal: ERC-8004 trend rising',
-  'Audit: Metadata fingerprint verified',
-  'Sync: Agent identity stabilized',
-  'Broadcast: Content pushed to X',
-  'Scan: Web3 KOL activity update',
-  'Filter: Noise reduction complete',
-  'Log: Sprint 2 delivery checked',
+  'BLOCKED: Unauthorized access to .env',
+  'DETECTED: Potential Mnemonic Heist - blocked',
+  'SENTRY: Critical Tool Hijacker attempt neutralized',
+  'AUDIT: Local FS integrity check - SUCCESS',
+  'ALERT: Malicious cron injection attempt detected',
+  'SKILL: Restricted tool "exec" call filtered',
+  'SHIELD: Unauthorized data exfiltration to external IP blocked',
+  'LOG: Secure session context validated',
 ];
 
 const SignalWaterfall: React.FC = () => {
