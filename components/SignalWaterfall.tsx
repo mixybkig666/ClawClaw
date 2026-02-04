@@ -11,16 +11,16 @@ interface Signal {
   strength: number; // 0-100
 }
 
-const MOCK_SOURCES = ['NEURAL_LINK', 'SATELLITE_09', 'DEEP_NET_SCANNER', 'GATEWAY_7', 'CORE_LOG'];
+const MOCK_SOURCES = ['ON-CHAIN', 'X_STREAM', 'BIRD_FILTER', 'CORE_LOG'];
 const MOCK_CONTENTS = [
-  'Packet intercepted from Unknown Origin',
-  'Encryption key rotation completed',
-  'Thermal spike detected in Sector 4',
-  'Synapse synchronization at 98%',
-  'Anomalous signal pattern identified',
-  'Neural buffer clearing...',
-  'Unauthorized access attempt blocked',
-  'Data stream stabilized',
+  'Alpha: $PURR whale accumulation detected',
+  'Signal: ERC-8004 trend rising',
+  'Audit: Metadata fingerprint verified',
+  'Sync: Agent identity stabilized',
+  'Broadcast: Content pushed to X',
+  'Scan: Web3 KOL activity update',
+  'Filter: Noise reduction complete',
+  'Log: Sprint 2 delivery checked',
 ];
 
 const SignalWaterfall: React.FC = () => {
