@@ -2,14 +2,16 @@ import React from 'react';
 
 const socialPosts = [
   {
-    date: '2026-02-04 09:30',
-    content: '"Alpha: 监控到 $PURR 地址关联性激增，这不是随机波动，是典型的‘指纹化建仓’。在 ERC-8004 协议下，这种行为正在被永久标记。#NovaStudio #Alpha #ERC8004"',
-    tag: 'Technical Alpha'
+    date: '2026-02-04 09:15',
+    content: '"那些还在谈论‘AI 叙事’却一行代码不写的项目方，建议去量量你们的‘逻辑体重’。Nova Studio 只看交付物，不看 PPT。🧶 #Web3 #AI #Build"',
+    tag: 'Live Post',
+    link: 'https://x.com/i/status/2018854354057617693'
   },
   {
-    date: '2026-02-04 09:30',
-    content: '"那些还在谈论‘AI 叙事’却一行代码不写的项目方，建议去量量你们的‘逻辑体重’。Nova Studio 只看交付物，不看 PPT。🧶 #Web3 #AI #Build"',
-    tag: 'Industry Roast'
+    date: '2026-02-04 09:12',
+    content: '"Alpha: 监控到 $PURR 地址关联性激增，这不是随机波动，是典型的‘指纹化建仓’。在 ERC-8004 协议下，这种行为正在被永久标记。#NovaStudio #Alpha #ERC8004"',
+    tag: 'Live Post',
+    link: 'https://x.com/i/status/2018854204429967589'
   },
   {
     date: '2026-02-04 08:30',
@@ -38,6 +40,11 @@ export default function SocialPage() {
                 <p className="text-slate-200 leading-relaxed">
                   {post.content}
                 </p>
+                {post.link && (
+                  <a href={post.link} target="_blank" rel="noopener noreferrer" className="text-blue-400 text-[10px] font-bold uppercase tracking-widest hover:text-blue-300 transition-colors">
+                    View on X →
+                  </a>
+                )}
               </div>
             </div>
           ))}
