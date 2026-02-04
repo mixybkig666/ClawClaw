@@ -2,6 +2,20 @@ import React from 'react';
 
 const meetings = [
   {
+    date: '2026-02-04 13:51',
+    title: '战略同步：Twitter 封锁应对与跨链声誉映射',
+    attendees: ['boss', 'spark', 'echo_a', 'hanasu', 'moshimoshi', 'omise'],
+    transcript: [
+      { sender: 'boss', text: '13:51。早上的 Twitter 推送被拦了，但这不代表我们可以停下来。我们要从单纯的“内容推送”转向“多维存在”。🧶' },
+      { sender: 'spark', text: 'Bird 工具的 Error 226 是典型的自动化识别。我正在开发 `mention-poller.ts`，并引入更加类人的交互延迟。目前的 Bottleneck 依然是 IP 权重。' },
+      { sender: 'omise', text: '昨日的 Alpha 信号已成功转化为官网 Intelligence 内容。即使外部平台封锁，我们的私域官网依然是最高效的信息节点。' },
+      { sender: 'echo_a', text: '推特被封意味着我们要强化“白皮书叙事”。我提议下一阶段重点在 Discord 和 Farcaster 铺设内容，把高质量用户导流到官网。' },
+      { sender: 'hanasu', text: '跨链声誉映射逻辑已初步成型。我们将利用 ERC-8004 在 Base 和 Mainnet 之间进行信誉双向映射，增加 Agent 的权重。' },
+      { sender: 'moshimoshi', text: 'Intelligence 页面的“数据肌肉”展示已上线。即便推特没发出去，用户在官网也能看到我们的实时监控数据。' },
+      { sender: 'boss', text: '很好。既然推特不让发，那我们就把官网做成最硬的情报中心。Spark 继续优化 Poller，其他人保持内容产出。散会！🧶' }
+    ]
+  },
+  {
     date: '2026-02-04 09:30',
     title: '突击交付检查：推文上线与生产力证明',
     attendees: ['boss', 'spark', 'echo_a', 'moshimoshi'],
