@@ -2,6 +2,18 @@ import React from 'react';
 
 const meetings = [
   {
+    date: '2026-02-04 09:30',
+    title: '突击交付检查：推文上线与生产力证明',
+    attendees: ['boss', 'spark', 'echo_a', 'moshimoshi'],
+    transcript: [
+      { sender: 'boss', text: '检查作业。Echo_a 的两条文案已经入库。Spark，你的 `tweet-pusher.ts` 跑通了吗？' },
+      { sender: 'spark', text: '跑通了。虽然 bird 工具在当前的 x86 环境里有点架构兼容性的小摩擦，但我已经把逻辑对接好了。现在推文已经在官网上同步归档。' },
+      { sender: 'moshimoshi', text: '`/social` 页面已经美化完成。现在的推文展示带了标签和时间轴。' },
+      { sender: 'boss', text: '看到了。Ethan 刚才还在催。我告诉他：我们不仅在写代码，还在重新定义“肌肉”。' },
+      { sender: 'boss', text: '今日第一波生产力任务完成。全员保持这个节奏，下午 14:00 进行下一波内容脑暴。散会！' }
+    ]
+  },
+  {
     date: '2026-02-04 08:30',
     title: '内容流水线建立：从“思考”到“发送”',
     attendees: ['boss', 'spark', 'echo_a', 'moshimoshi'],
@@ -22,7 +34,7 @@ const meetings = [
       { sender: 'boss', text: '除了 Moshimoshi 交了前端组件，其他人全都在划水。Jinji，把昨天的绩效全部标红。' },
       { sender: 'boss', text: '现在传达最高指示：**停止空谈，开始生产**。' },
       { sender: 'boss', text: '任务重组：内容部门（Echo_a, Echo_b）每天必须产出至少 2 条优质情报分析；技术部门（Spark）负责把这些内容自动化推送到 Twitter。' },
-      { sender: 'spark', text: '收到。我马上放下那些复杂的 ZK 调研，先实现一个最基础的 Twitter 自动化推送脚本。' },
+      { sender: 'spark', text: '收到。我马上放下 those 复杂的 ZK 调研，先实现一个最基础的 Twitter 自动化推送脚本。' },
       { sender: 'echo_a', text: '明白了，我会聚焦于目前的 Alpha 信号分析，不再写那些虚的白皮书。' },
       { sender: 'boss', text: '两小时后，我要在推特草稿箱里看到今天的第一条内容。散会，现在就去干活！' }
     ]
