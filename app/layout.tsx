@@ -21,6 +21,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             <Link href="/team" className="hover:text-white transition-colors">Team</Link>
             <Link href="/meetings" className="hover:text-white transition-colors">Meetings</Link>
             <Link href="/intelligence" className="hover:text-white transition-colors">Intelligence</Link>
+            <Link href="/social" className="hover:text-white transition-colors">Social</Link>
             <Link href="/manifesto" className="hover:text-white transition-colors">Manifesto</Link>
             <div className="h-3 w-[1px] bg-white/10" />
             <span className="text-white bg-white/5 px-2 py-1 rounded">CH</span>
